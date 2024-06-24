@@ -6,42 +6,104 @@
     android:layout_height="match_parent"
     tools:context=".EditRecipeActivity">
 
-    <EditText
-        android:id="@+id/editTextName"
+    <!-- Nama Masakan Label -->
+    <TextView
+        android:id="@+id/tvLabelName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Nama Masakan"
+        android:text="Nama Masakan :"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp"/>
 
     <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nama Masakan"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Bahan Label -->
+    <TextView
+        android:id="@+id/tvLabelIngredients"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Bahan :"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
         android:id="@+id/editTextIngredients"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Bahan"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelIngredients"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp"/>
+
+    <!-- URL Gambar Label -->
+    <TextView
+        android:id="@+id/tvLabelImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="URL Gambar :"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIngredients"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
 
     <EditText
         android:id="@+id/editTextImage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="URL Gambar"
-        app:layout_constraintTop_toBottomOf="@+id/editTextIngredients"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelImage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp"/>
+
+    <!-- Cara Pembuatan Label -->
+    <TextView
+        android:id="@+id/tvLabelInstructions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cara Pembuatan :"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
 
     <EditText
         android:id="@+id/editTextInstructions"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Cara Pembuatan"
-        app:layout_constraintTop_toBottomOf="@+id/editTextImage"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelInstructions"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp"/>
@@ -51,6 +113,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Update Resep"
+        android:textColor="@android:color/white"
         app:layout_constraintTop_toBottomOf="@+id/editTextInstructions"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

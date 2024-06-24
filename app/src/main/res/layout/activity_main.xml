@@ -3,14 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/background_color">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/buttonAddRecipe"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
 
     <Button
         android:id="@+id/buttonAddRecipe"
@@ -19,5 +22,7 @@
         android:text="Add Recipe"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="16dp"/>
+        android:layout_margin="16dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="@android:color/white"/>
 </RelativeLayout>

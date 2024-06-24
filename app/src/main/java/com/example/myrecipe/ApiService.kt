@@ -22,7 +22,7 @@ interface ApiService {
     fun deleteRecipe(@Path("id") id: Int): Call<Void>
 
     companion object {
-        private const val BASE_URL = "https://45a0-112-215-154-190.ngrok-free.app"
+        private const val BASE_URL = "https://66ab-182-4-133-234.ngrok-free.app"
 
         fun create(): ApiService {
             val retrofit = Retrofit.Builder()

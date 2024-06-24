@@ -3,7 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/item_background"
+    android:elevation="4dp"
+    android:layout_margin="8dp">
 
     <ImageView
         android:id="@+id/ivRecipeImage"
@@ -11,25 +14,30 @@
         android:layout_height="80dp"
         android:scaleType="centerCrop"
         android:src="@drawable/placeholder_image"
-        android:contentDescription="@string/recipe_image" />
+        android:contentDescription="@string/recipe_image"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/image_background"
+        android:elevation="4dp"/>
 
     <TextView
         android:id="@+id/tvRecipeName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:textSize="18sp"
         android:textColor="@android:color/black"
         android:textStyle="bold"
         android:ellipsize="end"
         android:maxLines="2"
-        android:text="@string/recipe_name_placeholder" />
+        android:text="@string/recipe_name_placeholder"/>
 
     <Button
         android:id="@+id/buttonDeleteRecipe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Delete"
-        android:layout_marginStart="16dp"/>
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="@android:color/white"/>
+
 </LinearLayout>
